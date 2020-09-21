@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".activities.LocalBoundServiceActivity">
+
+    <Button
+        android:id="@+id/button_start_bound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:text="Start"
+        app:layout_constraintBottom_toTopOf="@+id/button_stop_bound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/button_stop_bound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_bind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_start_bound" />
+
+    <Button
+        android:id="@+id/button_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_unbind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_stop_bound" />
+
+    <Button
+        android:id="@+id/button_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unbind"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_get_random_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_bind" />
+
+    <Button
+        android:id="@+id/button_get_random_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Random Number"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_unbind" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_start_bound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
